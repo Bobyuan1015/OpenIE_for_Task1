@@ -190,18 +190,18 @@ public class example {
 //  }
   
   
-  public static void main(String[] args) {
-  LexicalizedParser lp = LexicalizedParser.loadModel(
-		  "edu/stanford/nlp/models/lexparser/englishPCFG.ser.gz",
-		  "-maxLength", "80", "-retainTmpSubcategories");
-		  TreebankLanguagePack tlp = new PennTreebankLanguagePack();
-		  // Uncomment the following line to obtain original Stanford Dependencies
-		  // tlp.setGenerateOriginalDependencies(true);
-		  GrammaticalStructureFactory gsf = tlp.grammaticalStructureFactory();
-		  String[] sent = {"This", "is", "an", "easy", "sentence", "."} ;
-		  Tree parse = lp.apply(SentenceUtils.toWordList(sent));
-		  GrammaticalStructure gs = gsf.newGrammaticalStructure(parse);
-		  Collection<TypedDependency> tdl = gs.allTypedDependencies();
-		  System.out.println(tdl);
-  }
+//  public static void main(String[] args) {
+//  LexicalizedParser lp = LexicalizedParser.loadModel(
+//		  "edu/stanford/nlp/models/lexparser/englishPCFG.ser.gz",
+//		  "-maxLength", "80", "-retainTmpSubcategories");
+//		  TreebankLanguagePack tlp = new PennTreebankLanguagePack();
+//		  // Uncomment the following line to obtain original Stanford Dependencies
+//		  // tlp.setGenerateOriginalDependencies(true);
+//		  GrammaticalStructureFactory gsf = tlp.grammaticalStructureFactory();
+//		  String[] sent = {"This", "is", "an", "easy", "sentence", "."} ;
+//		  Tree parse = lp.apply(SentenceUtils.toWordList(sent));
+//		  GrammaticalStructure gs = gsf.newGrammaticalStructure(parse);
+//		  Collection<TypedDependency> tdl = gs.allTypedDependencies();
+//		  System.out.println(tdl);
+//  }
 }
