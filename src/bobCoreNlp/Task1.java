@@ -72,7 +72,7 @@ public class Task1 {
 		
 		      // Print the triples
 		      for (RelationTriple triple : triples) {
-		        System.out.println(triple.confidence + "\t" +
+		    	  writer.println(triple.confidence + "\t" +
 		            triple.subjectLemmaGloss() + "\t" +
 		            triple.relationLemmaGloss() + "\t" +
 		            triple.objectLemmaGloss());
