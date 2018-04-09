@@ -29,7 +29,7 @@ import java.util.stream.Stream;
  * You can call this code with:
  *
  * <pre>
- *   java -mx1g -cp stanford-openie.jar:stanford-openie-models.jar edu.stanford.nlp.naturalli.OpenIEDemo
+ *   java -mx1g -cp stanford-openie.jar:stanford-openie-models.jar bobCoreNlp.Task1
  * </pre>
  *
  */
